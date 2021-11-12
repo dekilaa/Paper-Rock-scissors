@@ -1,20 +1,20 @@
-const papir = document.querySelector('#papir');
-const kamen = document.querySelector('#kamen');
-const makaze = document.querySelector('#makaze');
+const paper = document.querySelector('#paper');
+const rock = document.querySelector('#rock');
+const scissors = document.querySelector('#scissors');
 const human = document.querySelector('#human-choice')
 const cpu = document.querySelector('#cpu-choice')
 const winner = document.querySelector('#winner')
-
-listiners(papir)
-listiners(kamen)
-listiners(makaze)
+  
+listiners(paper)
+listiners(rock)
+listiners(scissors)
 
 function click(choice) {
     if ('click'){
         human.innerHTML = `Human choice is ${choice.toUpperCase()}`;
         cpu.innerHTML = `The computer decides...`;
         setTimeout(() => {
-            const choiceArr = [papir,kamen,makaze];
+            const choiceArr = [paper,rock,scissors];
             const rand = choiceArr[random()]
             const cpuContent = rand.textContent;
             getChoice(choice,cpuContent)

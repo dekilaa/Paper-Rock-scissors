@@ -2,13 +2,13 @@ function getChoice(choice, cpuContent) {
     if ( choice == cpuContent ){
         winner.innerHTML = `It is EQUAL!`
       } 
-      else if ( choice == 'papir' && cpuContent == 'kamen') {
+      else if ( choice == 'paper' && cpuContent == 'rock') {
         winner.innerHTML = `Human is the WINNER,  ${choice} is stronger then ${cpuContent}`
       }
-      else if ( choice == 'kamen' && cpuContent == 'makaze') {
+      else if ( choice == 'rock' && cpuContent == 'scissors') {
         winner.innerHTML = `Human is the WINNER,  ${choice} is stronger then ${cpuContent}`
       }
-      else if ( choice == 'makaze' && cpuContent == 'papir') {
+      else if ( choice == 'scissors' && cpuContent == 'paper') {
         winner.innerHTML = `Human is the WINNER,  ${choice} is stronger then ${cpuContent}`
       }
       else {
