@@ -1,13 +1,17 @@
 const paper = document.querySelector('#paper');
 const rock = document.querySelector('#rock');
 const scissors = document.querySelector('#scissors');
-const human = document.querySelector('#human-choice')
-const cpu = document.querySelector('#cpu-choice')
-const winner = document.querySelector('#winner')
-  
-listiners(paper)
-listiners(rock)
-listiners(scissors)
+const human = document.querySelector('#human-choice');
+const cpu = document.querySelector('#cpu-choice');
+const winner = document.querySelector('#winner');
+const play = document.querySelector('#play');
+const form = document.querySelector('#form');
+const section2 = document.querySelector('#section2');
+
+listiners(paper);
+listiners(rock);
+listiners(scissors);
+playListiner(play);
 
 function click(choice) {
     if ('click'){
@@ -23,6 +27,15 @@ function click(choice) {
             cpu.innerHTML = `Computer choice is ${rand.textContent.toUpperCase()}`;
         }, 1000);
     }
+}
+
+function playListiner(arg) {
+    arg.addEventListener('click', function(e){
+        form.style.display = "";
+        section2.style.display = "";
+        play.style.display = "none";
+        e.preventDefault()
+    });
 }
 
 function listiners (argument){

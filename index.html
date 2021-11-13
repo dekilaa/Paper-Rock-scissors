@@ -4,22 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="src/style.css"/>
     <title>Paper Rock scissors</title>
 </head>
 <body>
     <h1>Welcome to game</h1>
-    <form>
+    <form id="form" style="display: none;">
         <button value="0" id="paper">Paper</button>
         <button value="1" id="rock">Rock</button>
         <button value="2" id="scissors">Scissors</button>
     </form>
-    <hr>
-    <section>
+    <section id="section2" style="display: none;">
         <h2 id="human-choice">Human pick ....</h2>
         <h2 id="cpu-choice">Computer pick ....</h2>
     </section>
-    <h1 id="winner">....WIN</h1>
+    <h1 id="winner"></h1>
+    <button id="play" style="display: 1"><i class="fas fa-play"></i></button>
     <script src="choice.js"></script>
     <script src="index.js"></script>
 </body>
