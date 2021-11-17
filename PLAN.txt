@@ -2,8 +2,8 @@ Napravi play dugme = DONE!
 Namesti listener= DONE!
 Namesi display proporties off na sve sem h1 za pocetak = DONE!
 Kad se klikne play da bude on = DONE!
-Napravi po 4 health srca za cpu i igraca
-Namesti da se smanjuje po 1 srce svaki put kad izgubi neko
+Napravi po 4 health srca za cpu i igraca = DONE!
+Namesti da se smanjuje po 1 srce svaki put kad izgubi neko = DONE!
 Kad ostane neko bez srca ispise se pobednik 
 Posle 3 sekunde pitanje da li se nastavlja igra ili se izlazi
 Ako se nastavlja refesh page

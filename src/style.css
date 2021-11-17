@@ -2,7 +2,23 @@ body {
     text-align: center;
 }
 
-#play {
+#players-health {
+    color: blue;
+    position:absolute;
+    text-align: left;
+    margin-left: 30%;
+}
+
+#cpu-health {
+    color: red;
+    position: absolute;
+    right: 0;
+    margin-right: 30%;
+    
+    justify-content: right;
+}
+#play, #playAgain {
     font-size: 150px;
     border-radius: 50%;
+    color:slateblue;
 }

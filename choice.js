@@ -1,17 +1,27 @@
 function getChoice(choice, cpuContent) {
+
+  
     if ( choice == cpuContent ){
-        winner.innerHTML = `It is EQUAL!`
+      winner.title = "EQUAL"
+      return winner.innerHTML = `It is EQUAL!`
       } 
-      else if ( choice == 'paper' && cpuContent == 'rock') {
-        winner.innerHTML = `Human is the WINNER,  ${choice} is stronger then ${cpuContent}`
+      else if ( choice == 'Paper' && cpuContent == 'Rock') {
+        winner.title = "human"
+        return winner.innerHTML = `Human is the WINNER,  ${choice} is stronger then ${cpuContent}`   
       }
-      else if ( choice == 'rock' && cpuContent == 'scissors') {
-        winner.innerHTML = `Human is the WINNER,  ${choice} is stronger then ${cpuContent}`
+      else if ( choice == 'Rock' && cpuContent == 'Scissors') {
+        winner.title = "human"
+        return winner.innerHTML = `Human is the WINNER,  ${choice} is stronger then ${cpuContent}`
       }
-      else if ( choice == 'scissors' && cpuContent == 'paper') {
-        winner.innerHTML = `Human is the WINNER,  ${choice} is stronger then ${cpuContent}`
+      else if ( choice == 'Scissors' && cpuContent == 'Paper') {
+        winner.title = "human"
+        return winner.innerHTML = `Human is the WINNER,  ${choice} is stronger then ${cpuContent}`
       }
       else {
-        winner.innerHTML = `Computer is the WINNER,${cpuContent} is stronger then ${choice} `
+        winner.title = "cpu"
+        return winner.innerHTML = `Computer is the WINNER,${cpuContent} is stronger then ${choice} `
+        
       }
+ 
 }
+
